@@ -9,16 +9,16 @@ param (
     # Directory will be generated if it doesn't exist.
     [Parameter(Mandatory = $true)]
     [string]
-    $Destination,
+    $Destination="c:\Users\kristenm\Backup",
     # Path where the logfiles have to go. Two logfiles are being generated, 1 for the script and 1 for robocopy.
     # Must not end with a \
     [Parameter(Mandatory = $true)]
     [string]
-    $LogFilePath,
+    $LogFilePath="c:\Users\kristenm\Backup",
     # Path to the Configfile (in JSON format)
     [Parameter(Mandatory = $true)]
     [string]
-    $ConfigFile,
+    $ConfigFile=".\config.json",
     # Backup or Restore
     [Parameter(Mandatory=$false)]
     [ValidateSet("Backup", "Restore")]

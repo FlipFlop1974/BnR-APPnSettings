@@ -1,0 +1,73 @@
+﻿{
+  "_MyConfig": [
+    "$Env:Userprofile\\_MyConfig",
+    ""
+  ],
+  "WKO-IT-MakroSettings": [
+    "$Env:Appdata\\WKO-IT\\Unterschrift_Kristen Michael.png",
+    "$Env:Appdata\\WKO-IT\\Unterschrift_Kristen Michael_klein.png",
+    "$Env:Appdata\\WKO-IT\\WWMakroSettings.ini",
+    "$Env:Appdata\\WKO-IT\\WWMakroSettings.ini.bsp"
+  ],
+  "VSCode": [
+    "choco:vscode",
+    "choco:vscode-powershell",
+    "choco:vscode-markdownlint",
+    "$Env:Appdata\\Code\\User\\settings.json"
+  ],
+  "WinSCP": [
+    "HKEY_CURRENT_USER\\Software\\Martin Prikryl\\WinSCP 2"
+  ],
+  "RIOT": [
+    "https://www.dropbox.com/s/vgbe2lw84qg7uk9/Riot-setup.exe?dl=1"
+  ],
+  "Notepad++": [
+    "choco:notepadplusplus",
+    "$Env:Appdata\\Notepad++"
+  ],
+  "Bitwarden": [
+    "choco:bitwarden"
+  ],
+  "DeepL": [
+    "choco:deepl"
+  ],
+  "Camtasia": [
+    "choco:camtasia"
+  ],
+  "Totalcommander": [
+    "choco:totalcommander",
+    "HKEY_CURRENT_USER\\Software\\Ghisler\\Total Commander"
+  ],
+  "Snagit": [
+    "choco:snagit"
+  ],
+  "icloud": [
+    "choco:icloud"
+  ],
+  "Gimp": [
+    "choco:gimp"
+  ],
+  "Wireshark": [
+    "choco:wireshark"
+  ],
+  "TeamViewer": [
+    "choco:teamviewer9"
+  ],
+  "GeoSetter": [
+    "choco:geosetter"
+  ],
+  "Sketchup": [
+    "choco:sketchup"
+  ],
+  "PolarFlow": [
+    "https://flowsync.cdn.polar.com/connect/download/FlowSync_3.0.0.1337.exe"
+  ],
+  "Handbrake": [
+    "choco:handbrake"
+  ],
+  "IrfanView": [
+    "choco:irfanview"
+  ]
+}
+
+    

@@ -16,13 +16,4 @@ Under "Title" you can specify one or more of the following
  - Package available in choco 
  - URL to executable to be downloaded
 
-The format should be
-{
-  "Title": [
-    "Path to Dir or File",
-    "Path to Reg Hives",
-    "choco:PackageName",
-    "URL to executable"
-  ],
-  ...repeat it as often as you need to
-}
+

@@ -10,8 +10,8 @@ It was and is important to me that the backup and restore is as easy as possible
 
 ## The content oft the config.json file
 The content of the config file (in json format) is as follows:
-"Title" is freely selectable and should be meaningful to you
-Under "Title" you can specify one or more of the following
+"Title" is freely selectable and should be meaningful to you, see config.json for examples
+Under "Title" you can specify **one or more** of the following
  - Path to Dirs or Files
  - Path to Reg Hives
  - Package available in choco 

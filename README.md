@@ -19,6 +19,7 @@ Under "Title" you can specify ***one or more*** of the following
 
 ## The structure of the config.json file
 Note that all details are within the object or linked. This means that they can be repeated or simply occur individually. See the file **config.json** as an example.
+It is not necessary to classify. The script automatically detects which type is in question.
 ```
 {
   "Title": [

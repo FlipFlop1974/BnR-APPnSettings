@@ -151,10 +151,11 @@ If (-not(Test-Path -PathType Leaf -Path $ConfigFile)) {
 
 #region CHECK MODs
 #Install PS-Framework (needed for logging)
-if (Get-Module -ListAvailable -Name PSFramework -) {
-    Write-Host "Module exists"
-} 
-Install-Module -Name PSFramework -MinimumVersion 1.4.149 -Repository PSGallery
+if (Get-InstalledModule -Name "PSFramework" -MinimumVersion 1.4.149) {
+    Write-Host "PSFramework Module in Version $($(Get-InstalledModule -Name "PSFramework" | Select-Object Version).Version) exists"
+} else {
+    Install-Module -Name PSFramework -MinimumVersion 1.4.149 -Repository PSGallery -Force
+}
 
 #Install Choco when in Restore Mode (we don't need choco in Backup Mode)
 if($Direction -eq "Restore") {

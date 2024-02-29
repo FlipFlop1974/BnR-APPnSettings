@@ -102,7 +102,7 @@ function Export-IsaRegistryKeyStore {
     [CmdletBinding()]
     param (
         # Hashtable containing all the registry keys to be backed up
-        # Name : HiveName, Value ist eine HashTable mit KeyNamen+Value+Type
+        # Name : HiveName, Value is a HashTable with KeyName+Value+Type
         [Parameter(Mandatory)]
         [hashtable] $RegistryList,
         # Directory to store the file
@@ -122,7 +122,7 @@ function Import-IsaRegistryKeyStore {
     [CmdletBinding()]
     param (
         # returns Hashtable containing all the registry keys to be backuped
-        # Name : HiveName, Value ist eine HashTable mit KeyNamen+Value+Type
+        # Name : HiveName, Value is a HashTable with KeyName+Value+Type
         [Parameter(Mandatory)]
         [string]
         $FolderPath
@@ -180,7 +180,7 @@ Write-PSFMessage -Level Host -Message "Reading JSON File: $ConfigFile"
 $AppSettings = Get-Content -Path $ConfigFile | ConvertFrom-Json -AsHashtable
 
 # init store for registry key values
-$RegistryKeyStore = @{}                     # Hashtable um alle keys eines Durchlaufs zu speichern
+$RegistryKeyStore = @{}                     # Hashtable to store all keys of a run
 if ( $Direction -eq "Restore" ) {
     $RegistryKeyStore = Import-IsaRegistryKeyStore -FolderPath $Destination
 }
@@ -320,7 +320,7 @@ ForEach ($AppSetting in $AppSettings.Keys) {
 
         }
     }
-# Ev. gespeicherte Einzel Keys jetzt rauschreiben
+# Write out any saved single keys now
 if ( $Direction -eq 'Backup' -and $RegistryKeyStore.Count -gt 0 ) {
     Export-IsaRegistryKeyStore -RegistryList $RegistryKeyStore -FolderPath $Destination
 }
